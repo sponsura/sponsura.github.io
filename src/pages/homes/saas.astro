@@ -12,28 +12,32 @@ import { headerData } from '~/navigation';
 import FAQs from '~/components/widgets/FAQs.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 
-const metadata = {
-  title: 'SaaS Landing Page',
-};
+const metadata = {};
 ---
 
 <Layout metadata={metadata}>
   <Fragment slot="header">
     <Header
-      {...headerData}
+      links={[
+        { text: 'Home', href: '#' },
+        { text: 'About', href: '#about' },
+        { text: 'Resume', href: '#resume' },
+        { text: 'Porfolio', href: '#porfolio' },
+        { text: 'Blog', href: '#blog' },
+        { text: 'Github', href: 'https://github.com/arthelokyo' },
+      ]}
       actions={[
         {
-          variant: 'secondary',
           text: 'Login',
           href: '#',
         },
         {
-          variant: 'primary',
-          text: 'Sign Up',
+          text: 'Get Started',
           href: '#',
         },
       ]}
       isSticky
+      showToggleTheme
     />
   </Fragment>
 
