@@ -1,5 +1,5 @@
 site:
-  name: Sponsura
+  name: sponsura
   site: 'https://sponsorshipassurance.com'
   base: '/'
   trailingSlash: false
@@ -10,7 +10,7 @@ site:
 metadata:
   title:
     default: Sponsura
-    template: '%s — Sponsura | Sponsorship Assurance'
+    template: '%s — Sponsura | Community Sponsorship Management'
   description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
   robots:
     index: true
